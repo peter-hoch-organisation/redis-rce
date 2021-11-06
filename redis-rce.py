@@ -245,7 +245,7 @@ def main():
                         help="rogue server ip", required=True)
     parser.add_argument("-P", "--lport", dest="lport", type=int,
                         help="rogue server listen port, default 21000", default=21000)
-    parser.add_argument("-f", "--file", type=str, help="RedisModules to load, default exp.so", default='exp_lin.so')
+    parser.add_argument("-f", "--file", type=str, help="RedisModules to load, default module.so", default='module.so')
     parser.add_argument("-a", "--auth", dest="auth", type=str, help="redis password")
     parser.add_argument("-v", "--verbose", action="store_true", help="show more info", default=False)
     options = parser.parse_args()
